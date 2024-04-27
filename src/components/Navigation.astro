@@ -9,16 +9,16 @@ import '../styles/styles.css'
             <img class="logo" src="/logo_default.png" alt="PTI">
         </a>
         <ul class="links">
-            <li class="link">
+            <li>
                 <a href="/#top" target="_self">Início</a>
             </li>
-            <li class="link">
+            <li>
                 <a href="/#sobre" target="_self">Sobre nós</a>
             </li>
-            <li class="link">
+            <li>
                 <a href="/#serviços" target="_self">Serviços</a>
             </li>
-            <li class="link">
+            <li>
                 <a href="/#clientes" target="_self">Clientes</a>
             </li>
         </ul>
@@ -28,22 +28,23 @@ import '../styles/styles.css'
 <style>
     .navbar {
         --logo-width: 64px;
+        --logo-height: 48px;
         --logo-margin-left: 16px;
         font-size: large;
         position: top;
-        /* background-color: var(--navbar-color); */
         position: flex;
         display: flex;
+        height: 70px;
     }
 
     .navbar .logo {
         display: block;
-        justify-content: right;
+        justify-content: left;
         align-items: right;
         margin-left: var(--logo-margin-left);
-        margin-top: 6px;
+        margin-top: 8px;
         width: var(--logo-width);
-        height: 48px;
+        height: var(--logo-height);
     }
 
     .navbar .links {
@@ -61,14 +62,14 @@ import '../styles/styles.css'
         margin-right: calc( ( var(--logo-width) + var(--logo-margin-left) ) );
     }
 
-    .navbar .links .link {
+    .navbar .links > li {
         float: left;
         display: list-item;
         margin-left: 16px;
         margin-top: 0;
     }
 
-    .navbar .links .link a {
+    .navbar .links li > a {
         text-decoration: none;
     }
 </style>
