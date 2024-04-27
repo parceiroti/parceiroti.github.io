@@ -1,0 +1,41 @@
+---
+import '../styles/styles.css';
+import Navigation from '../components/Navigation.astro';
+import { string } from 'astro/zod';
+
+interface MainLayout {
+    page: string;
+    description: string;
+    banner: string;
+}
+
+const { page, description, banner }: any = Astro.props;
+
+let currentPage: string = "";
+
+if(page !== undefined && page !== "undefined" && page !== "") {
+    currentPage = " - " + page;
+}
+---
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icon_default.png">
+    <!-- Add OG link preview -->
+    <meta property="og:title" content={ "Parceiro TI" + currentPage }>
+    <meta property="og:description" content={ description }>
+    <meta property="og:image" content={ banner }>
+    <title>{ "Parceiro TI" + currentPage }</title>
+</head>
+<Navigation />
+
+<slot />
+
+<style>
+    html {
+        background-color: var(--background-color);
+    }
+</style>
+</html>
