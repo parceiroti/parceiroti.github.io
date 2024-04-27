@@ -1,0 +1,71 @@
+---
+import '../styles/styles.css'
+---
+
+
+<header>
+    <nav class="navbar">
+        <a href="/">
+            <img class="logo" src="/logo_default.png" alt="PTI">
+        </a>
+        <ul class="links">
+            <li class="link">
+                <a href="#top" target="_self">Início</a>
+            </li>
+            <li class="link">
+                <a href="#chars" target="_self">Sobre nós</a>
+            </li>
+            <li class="link">
+                <a href="#projects" target="_self">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    .navbar {
+        --logo-width: 64px;
+        --logo-margin-left: 16px;
+        font-size: large;
+        position: top;
+        /* background-color: var(--navbar-color); */
+        position: flex;
+        display: flex;
+    }
+
+    .navbar .logo {
+        display: block;
+        justify-content: right;
+        align-items: right;
+        margin-left: var(--logo-margin-left);
+        margin-top: 6px;
+        width: var(--logo-width);
+        height: 48px;
+    }
+
+    .navbar .links {
+        position: top;
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style-type: none;
+        overflow: hidden;
+        padding: 0;
+        margin-right: calc( ( var(--logo-width) + var(--logo-margin-left) ) );
+    }
+
+    .navbar .links .link {
+        float: left;
+        display: list-item;
+        margin-left: 16px;
+        margin-top: 0;
+    }
+
+    .navbar .links .link a {
+        text-decoration: none;
+    }
+</style>
