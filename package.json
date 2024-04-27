@@ -1,7 +1,7 @@
 {
-  "name": "pti-astro",
+  "name": "pti-website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0-devel",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
