@@ -1,6 +1,6 @@
 
 # <img style="width:32px;height:32px;" src="/public/icon_default.png"> Parceiro TI Website
-Este é o código-fonte do website da [Parceiro TI]()! Você está livre para modificar ou sugerir alterações de acordo com a licença [GNU General Public License v3]. Para sugerir alterações, [Crie uma Issue](https://github.com/parceiroti/parceiroti.github.io/issues/new). Para pedir alguma alteração em código, você pode criar um [novo Pull Request(ou PR)](https://github.com/parceiroti/parceiroti.github.io/pulls/new). Sua contribuição é bem-vinda!
+Este é o código-fonte do website da [Parceiro TI](https://parceiroti.github.io)! Você está livre para modificar ou sugerir alterações de acordo com a licença [GNU General Public License v3](LICENSE). Para sugerir alterações, [Crie uma Issue](https://github.com/parceiroti/parceiroti.github.io/issues/new). Para pedir alguma alteração em código, você pode criar um [novo Pull Request(ou PR)](https://github.com/parceiroti/parceiroti.github.io/pulls/new). Sua contribuição é bem-vinda!
 
 # <img style="width:26px;height:32px;" src="https://astro.build/assets/press/astro-icon-light-gradient.png"> Guia Astro (Inglês)
 ```sh
