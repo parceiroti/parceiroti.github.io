@@ -2,6 +2,7 @@
 import '../styles/styles.css';
 import Navigation from '../components/Navigation.astro';
 import { string } from 'astro/zod';
+import type { loadApp } from 'astro/app/node';
 
 interface MainLayout {
     page: string;
@@ -29,7 +30,7 @@ if(page !== undefined && page !== "undefined" && page !== "") {
     <meta property="og:image" content={ banner }>
     <title>{ "Parceiro TI" + currentPage }</title>
 </head>
-<Navigation />
+<Navigation client:load />
 
 <slot />
 
