@@ -72,4 +72,19 @@ import '../styles/styles.css'
     .navbar .links li > a {
         text-decoration: none;
     }
+
+    @media screen and (max-width: 600px) {
+        .navbar {
+            height: 100px;
+            line-height: 1.8em;
+        }
+        .navbar .links {
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-right: 16px;
+            flex-wrap: wrap;
+        }
+    }
 </style>
