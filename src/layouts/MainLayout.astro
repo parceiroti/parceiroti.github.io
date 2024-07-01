@@ -1,10 +1,9 @@
 ---
+import SideNavigation from '../components/SideNavigation.astro';
+import TopNavigation from '../components/TopNavigation.astro';
 import '../styles/styles.css';
-import Navigation from '../components/Navigation.astro';
-import { string } from 'astro/zod';
-import type { loadApp } from 'astro/app/node';
 
-interface MainLayout {
+interface Props {
     page: string;
     description: string;
     banner: string;
@@ -30,13 +29,57 @@ if(page !== undefined && page !== "undefined" && page !== "") {
     <meta property="og:image" content={ banner }>
     <title>{ "Parceiro TI" + currentPage }</title>
 </head>
-<Navigation />
 
-<slot />
+<body>
+    <div class="topnav-container">
+        <!-- class: "topnav" -->
+        <TopNavigation />
+    </div>
+    <div class="sidenav-container">
+        <!-- class: "sidenav" -->
+        <SideNavigation />
+    </div>
+    <main>
+        <div class="container">
+            <slot />
+        </div>
+    </main>
+    
+</body>
 
 <style>
     html {
         background-color: var(--background-color);
     }
+
+    body {
+        display: flex;
+        height: auto;
+    }
+
+    main {
+        display: block;
+        padding-left: 6px;
+        padding-top: 1px;
+    }
+
+    @media screen and (max-width: 1180px) {
+        body {
+            display: block;
+        }
+        .sidenav-container {
+            display: none;
+        }
+        main {
+            padding: 0;
+        }
+    }
+    
+    @media screen and (min-width: 1180px) {
+        .topnav-container {
+            display: none;
+        }
+    }
+    
 </style>
 </html>
