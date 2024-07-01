@@ -1,27 +1,52 @@
 
 /* Imports */
-@import './fonts.css';
-@import './colors.css';
+@import './_fonts.css';
+@import './_colors.css';
+
+:root {
+    font-family: sans-serif, system-ui, -apple-system;
+}
 
 html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Josefin Sans", sans-serif, system-ui, Arial;
     font-weight: bolder;
+    text-align: center;
 }
 
-* {
-    font-family: sans-serif, system-ui, -apple-system;
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--text-highlight-color);
+    text-decoration-thickness: .10em;
+    transition: 120ms ease-in;
+    
 }
 
-img {
-    border-radius: 16px;
+.underline:hover {
+    text-decoration-thickness: .15em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
 }
 
 .no-list-style {
-    list-style-type: none;
+    list-style: none;
 }
 
 .img-center {
@@ -41,38 +66,27 @@ img {
 
 .row > li {
     text-align: center;
-    margin: 10px;
+    margin: 6px;
 }
 
-.bold {
-    font-weight: bold;
-}
-
-.bolder {
-    font-weight: bolder;
-}
 
 .highlight {
     color: var(--text-highlight-color);
+    font-weight: bold;
 }
 
 .highlight-darker {
     color: var(--text-highlight-darker);
+    font-weight: bold;
 }
 
 a {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--link-color);
-    transition-duration: 300ms;
-    transition-behavior: ease-in;
+    transition: 300ms ease-in;
 }
 
-a:is(:hover) {
+a:hover {
     color: var(--pti-dark);
-}
-
-a:not(:hover) {
-    color: var(--link-color);
 }
 
 .center {

@@ -1,0 +1,134 @@
+
+@import "./styles.css";
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.slider-container > img {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    filter: brightness(65%);
+}
+
+.slider-container .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+
+.slider-container .text-container > h1 {
+    font-size: 3em;
+    font-family: "Josefin Sans", sans-serif, system-ui, Arial;
+    font-weight: bolder;
+}
+
+.slider-container .text-container > p {
+    font-size: 1.1em;
+    font-family:  sans-serif, system-ui, Arial;
+    font-weight: 600;
+}
+
+.company-info {
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.company-info > p {
+    font-size: 1.15em;
+}
+
+.solutions {
+    padding: 16px;
+    background-color: rgba(40, 40, 40, .05);
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.solutions * > ul {
+    display: table;
+    margin-bottom: 48px;
+}
+
+.solutions * ul > img {
+    position: relative;
+}
+
+.solutions * ul > li {
+    font-size: 1.25em;
+    padding-block: 3px;
+    font-weight: 500;
+}
+
+.solutions > h1 {
+    margin-bottom: 40px
+}
+
+.clientes ul {
+    align-items: center;
+    justify-content: center;
+}
+
+.clientes ul > li {
+    margin-inline: 16px;
+}
+
+.clientes ul li > img {
+    border-radius: 16px;
+    max-width: 220px;
+}
+
+@media screen and (max-width: 600px) {
+    .clientes ul {
+        display: flex;
+        margin-right: 12%;
+    }
+    .clientes ul > li {
+        display: block;
+    }
+}
+
+.footer {
+    display: block;
+    background: #252525;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    align-content: center;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: 24px;
+}
+
+.footer .right {
+    float: right;
+}
+
+.footer .right a {
+    text-decoration-color: gray;
+    color: white;
+}
+
+@media screen and (max-width: 410px) {
+    .footer {
+        text-align: center;
+    }
+    .footer .right {
+        float: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .slider-container .text-container > h1 {
+        font-size: 4em;
+    }
+}

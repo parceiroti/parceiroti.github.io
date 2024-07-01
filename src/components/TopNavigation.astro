@@ -3,11 +3,15 @@ import '../styles/styles.css'
 ---
 
 
-<header>
+<header class="topnav">
+    <a class="top-logo-link" href="/">
+        <img class="top-logo" src="/logo_caption.png" alt="PTI">
+    </a>
     <nav class="navbar">
-        <a href="/">
+        <a class="logo-link" href="/">
             <img class="logo" src="/logo_default.png" alt="PTI">
         </a>
+        
         <ul class="links">
             <li>
                 <a href="/#top" target="_self">Início</a>
@@ -26,6 +30,7 @@ import '../styles/styles.css'
 </header>
 
 <style>
+
     .navbar {
         --logo-width: 64px;
         --logo-height: 48px;
@@ -37,7 +42,7 @@ import '../styles/styles.css'
         height: 70px;
     }
 
-    .navbar .logo {
+    .logo {
         display: block;
         justify-content: left;
         align-items: right;
@@ -47,7 +52,7 @@ import '../styles/styles.css'
         height: var(--logo-height);
     }
 
-    .navbar .links {
+    .links {
         position: top;
         display: flex;
         width: 100%;
@@ -62,15 +67,21 @@ import '../styles/styles.css'
         margin-right: calc( ( var(--logo-width) + var(--logo-margin-left) ) );
     }
 
-    .navbar .links > li {
+    .links > li {
         float: left;
         display: list-item;
         margin-left: 16px;
         margin-top: 0;
     }
 
-    .navbar .links li > a {
+    .links > li > a {
         text-decoration: none;
+    }
+
+    @media screen and (min-width: 600px) {
+        .top-logo-link {
+            display: none;
+        }
     }
 
     @media screen and (max-width: 600px) {
@@ -78,7 +89,22 @@ import '../styles/styles.css'
             height: 100px;
             line-height: 1.8em;
         }
-        .navbar .links {
+
+        .logo-link {
+            display: none;
+        }
+
+        .top-logo {
+            display: flex;
+            margin: auto;
+            margin-top: 6%;
+            width: 25%;
+            height: 25%;
+            object-fit: cover;
+        }
+
+        .links {
+            margin-bottom: 12%;
             align-content: center;
             justify-content: center;
             align-items: center;

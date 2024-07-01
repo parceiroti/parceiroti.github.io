@@ -1,86 +1,105 @@
 ---
-import '../styles/styles.css';
+import '../styles/main_page.css';
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 
 <MainLayout page="Início" description="Soluções em TI, CFTV e tecnologia. Parceiro TI" banner="/main_banner.jpg">
-    <body>
-        <div class="top-banner img-center" id="top">
-            <img style="width:98%;height:100%;" src="/main_banner.jpg">
-            <span class="banner-text">
-                <h1 style="font-size:4.2rem;line-height: 3.5rem;">Parceiro <span class="highlight">T.I.</span></h1>
-                <p style="font-size: 1.5rem; margin-top: -2rem;">Soluções em CFTV e Tecnologia.</p>
-            </span>
+    <div class="slider-container">
+        <img src="/main_banner.jpg">
+        <div class="text-container">
+            <h1>SOLUÇÕES <span class="underline">EFICAZES</span></h1>
+            <p>Em Tecnologia da informação e Segurança</p>
         </div>
-        <div class="container" style="margin-left:6vw;">
-            <h1 class="highlight" id="sobre">Quem Somos?</h1>
-            <p class="highlight-darker bold">
-                Queremos ser os parceiros em que você possa confiar
-                e contar com, para manter seu ambiente de TI seguro e estável.
-            </p>
-            <p>
-                Desde 2010 no mercado oferecendo soluções otimizadas e com melhor custo benefício para nossos clientes.
-                Nosso objetivo é oferecer o melhor atendimento e recursos técnicos, e dessa forma contribuir para o 
-                crescimento dos clientes e parceiros através da tecnologia da informação.
-            </p>
-            <h1 id="serviços">Nossos Serviços</h1>
+    </div>
+    <div id="about-company" class="company-info">
+        <h1 class="highlight" id="sobre">Quem Somos?</h1>
+        <p class="highlight-darker">
+            Queremos ser os parceiros em que você possa confiar
+            e contar com, para manter seu ambiente de TI seguro e estável.
+        </p>
+        <p>
+            Desde 2010 no mercado oferecendo soluções otimizadas e com melhor custo benefício para nossos clientes.
+            Nosso objetivo é oferecer o melhor atendimento e recursos técnicos, e dessa forma contribuir para o 
+            crescimento dos clientes e parceiros através da tecnologia da informação.
+        </p>
+    </div>
+    <div class="solutions">
+        <h1 id="serviços">Nossas Soluções</h1>
+
+        <div id="serviços-informática" class="informatica">
+            <h2>Informática</h2>
             <ul>
                 <li>Manutenção de computadores</li>
                 <li>Manutenção de Servidores</li>
                 <li>Montagem de computadores e servidores</li>
+                <li>Instalação de sistema e formatação</li>
                 <li>Contratos de manutenção recorrente</li>
                 <li>Serviços presenciais e remotos</li>
             </ul>
-            <h2 id="serviços-dados">Dados</h2>
+	    <!-- <img src="/banners/informatica.jpg"> -->
+        </div>
+
+        <div id="serviços-redes" class="redes">
+            <h2>Redes</h2>
             <ul>
-                <li>Recuperação de dados</li>
-                <li>Backup de dados, localmente e em nuvem</li>
-            </ul>
-            <h2>Monitoramento</h2>
-            <ul>
-                <li>CFTV, Instalação de câmeras para monitoramento</li>
-            </ul>
-            <h1 id="clientes">Clientes</h1>
-            <ul class="row img-center">
-                <li>
-                    <img style="width:150px;height:102px;" src="https://static.wixstatic.com/media/1a45bd_3fde0e7f1c2449e09f766b65210c2f3b~mv2.png/v1/fill/w_300,h_204,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a45bd_3fde0e7f1c2449e09f766b65210c2f3b~mv2.png">
-                </li>
-                <li>
-                    <img style="margin-top:25px;width:100%" src="https://stockfrango.com.br/images/logo%20stock-u11087-fr.jpg">
-                </li>
-                <li>
-                    <h2 style="font-family: DM Sans">A&RX</h2>
-                    <p style="font-size:small;line-height:0.2em;">Telecomunicações</p>
-                </li>
-                <li>
-                    <h2 style="font-family: Playfair Display">Romaplast</h2>
-                    <p style="font-size:small;line-height:0.2em;">Comércio e Indústria de Plásticos LTDA.</p>
-                </li>
-                <li>
-                    <h2>Vinaplast</h2>
-                    <p style="font-size:small;line-height:0.5em;">Reciclagem e Recuperação de Plásticos</p>
-                </li>
-                <li>
-                    <h2>Condomínio Angélica</h2>
-                    <p style="font-size:small;line-height:0.01em;">Rio de Janeiro</p>
-                </li>
+                <li>Redes e servidores</li>
+                <li>Cabeamento de rede</li>
+                <li>Instalação de Câmera IP</li>
             </ul>
         </div>
-    </body>
-    <!-- <Footer /> -->
+
+        <div id="serviços-dados" class="dados">
+            <h2>Dados</h2>
+            <ul>
+                <li>Recuperação de dados básica</li>
+                <li>Backup de dados em nuvem e localmente</li>
+                <li>Backup automático para computadores</li>
+            </ul>
+        </div>
+
+        <div id="serviços-segurança" class="seguranca">
+            <h2>Segurança</h2>
+            <ul>
+                <li>CFTV (DVR e NVR)</li>
+                <li>Instalação de Câmeras por IP</li>
+                <li>Instalação de Alarmes</li>
+                <li>Instalação de Catracas</li>
+                <li>Portões motorizados</li>
+                <li>Instalação de Interfones</li>
+            </ul>
+        </div>
+    </div>
+    <div id="clientes" class="clientes">
+        <h1>Clientes</h1>
+	<ul class="row">
+	    <li>
+                <img src="https://static.wixstatic.com/media/142a7f_4aa90384b2c54f959ccf1de286731a6b~mv2.png/v1/fill/w_196,h_47,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo_Omni.png">
+	    </li>
+            <li>
+                <img style="width:85%" src="https://static.wixstatic.com/media/1a45bd_3fde0e7f1c2449e09f766b65210c2f3b~mv2.png/v1/fill/w_300,h_204,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1a45bd_3fde0e7f1c2449e09f766b65210c2f3b~mv2.png">
+            </li>
+            <li>
+                <img src="https://stockfrango.com.br/images/logo%20stock-u11087-fr.jpg">
+            </li>
+            <li>
+                <h2>Vinaplast</h2>
+                <p>Reciclagem e Recuperação de Plásticos</p>
+            </li>
+            <li>
+                <h2>Condomínio Angélica</h2>
+		<p>Campo Grande, Rio de Janeiro</p>
+	    </li>
+	    <li>
+		<h2>Edfício Olímpica</h2>
+                <p>Campo Grande, Rio de Janeiro</p>
+	    </li>
+        </ul>
+    </div>
+    <div class="footer">
+        &copy; Parceiro TI, 2024 - Rio de Janeiro, Brasil
+        <div class="right">
+            Feito com carinho por <a href="https://github.com/retrozinndev">João Dias</a>
+        </div>
+    </div>
 </MainLayout>
 
-<style>
-    .banner-text {
-        box-sizing: content-box;
-        line-height: 1.5em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-sizing: content-box;
-        border-radius: 16px;
-        background-color: rgba(255, 255, 255, 0.290);
-        padding: 10px;
-    }
-</style>
