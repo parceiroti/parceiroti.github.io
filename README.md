@@ -53,4 +53,4 @@ Todos os comandos são executados na pasta raiz do projeto:
 | `npm run astro -- --help` | Ver a ajuda da CLI do Astro                               |
 
 ### 👀 Quer aprender mais?
-Sinta-se livre para dar uma olhada na [documentação](https://docs.astro.build) do Astro, ou fale com a gente nas [nossas redes](https://astro.build/chat).
+Sinta-se livre para dar uma olhada na [documentação](https://docs.astro.build) do Astro, ou fale com a gente no [nosso Discord](https://astro.build/chat).
