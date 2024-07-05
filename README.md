@@ -2,7 +2,7 @@
 # <img style="width:32px;height:32px;" src="/public/icon_default.png"> Parceiro TI Website
 Este é o código-fonte do website da [Parceiro TI](https://parceiroti.github.io)! Você está livre para modificar ou sugerir alterações de acordo com a licença [GNU General Public License v3](LICENSE). Para sugerir alterações, [Crie uma Issue](https://github.com/parceiroti/parceiroti.github.io/issues/new). Para pedir alguma alteração em código, você pode criar um [novo Pull Request(ou PR)](https://github.com/parceiroti/parceiroti.github.io/pulls/new). Sua contribuição é bem-vinda!
 
-# <img style="width:26px;height:32px;" src="https://astro.build/assets/press/astro-icon-light-gradient.png"> Guia Astro (Inglês)
+# <img style="width:26px;height:32px;" src="https://astro.build/assets/press/astro-icon-light-gradient.png"> Guia Astro
 ```sh
 npm create astro@latest -- --template basics
 ```
@@ -15,9 +15,9 @@ npm create astro@latest -- --template basics
 
 ![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-### 🚀 Project Structure
+### 🚀 Estrutura de projeto
 
-Inside of your Astro project, you'll see the following folders and files:
+Dentro do Projeto Astro, você verá os seguintes arquivos e pastas:
 
 ```text
 /
@@ -33,24 +33,24 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+O Astro procura por arquivos `.astro` ou `.md` dentro de `src/pages/`. Cada página é exposta como um route com o nome do arquivo.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+No diretório `src/components/` é onde você irá colocar os seus componentes Astro/React/Vue/Svelte/Preact.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Qualquer mídia estática, pode ser colocada dentro do diretório `public/`.
 
-### 🧞 Commands
+### 🧞 Comandos
 
-All commands are run from the root of the project, from a terminal:
+Todos os comandos são executados na pasta raiz do projeto:
 
 | Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| :------------------------ | :-------------------------------------------------------- |
+| `npm install`             | Instala as dependências                                   |
+| `npm run dev`             | Inicia um servidor local em `localhost:4321`              |
+| `npm run build`           | Constrói o projeto para produção em `./dist/`             |
+| `npm run preview`         | Pré-visualize seu projeto localmente antes de implantá-lo |
+| `npm run astro ...`       | Execute comando de CLI, como `astro add` e `astro check`  |
+| `npm run astro -- --help` | Ver a ajuda da CLI do Astro                               |
 
-### 👀 Want to learn more?
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### 👀 Quer aprender mais?
+Sinta-se livre para dar uma olhada na [documentação](https://docs.astro.build) do Astro, ou fale com a gente nas [nossas redes](https://astro.build/chat).
